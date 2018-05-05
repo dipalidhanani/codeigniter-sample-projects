@@ -1,0 +1,185 @@
+.calendar  * {
+    box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+.calendar-sm {
+    cursor: default;
+    width: 800px;
+    height: 370px;
+}
+.calendar {
+    cursor: default;
+    width: 100%;
+	margin-bottom:20px;
+}
+
+.calendar-sm .c-pad-top {
+    padding-top: 2%;
+}
+
+/*.calendar .c-pad-top {
+    padding-top: 3%;
+}*/
+
+.c-grid {
+    height: inherit;
+}
+.c-day {
+    width: 14.28%;
+    height: 40px;
+	line-height:40px;
+	font-size:14px;
+    float: left;
+    text-align: center;
+	color:#6d6d6d;
+	background-color:#f8eed8;
+}
+
+.c-day-previous-month {
+    width: 14.28%;
+    height:40px;
+    float: left;
+    text-align: center;
+    color: #bfbfbf;
+	line-height:40px;
+	font-size:0;
+}
+
+.c-day-next-month {
+    width: 14.28%;
+    height: 13%;
+    float: left;
+    text-align: center;
+	height:40px;
+	color:#bfbfbf;
+	line-height:40px;
+	font-size:0;
+}
+
+.c-week-day {
+    width: 14.28%;
+    height: 35px;
+    background-color: #d7d7d7;
+    color:#323232;
+    float: left;
+    text-align: center;
+    font-weight: 400;
+	font-size:13px;
+	line-height:35px;
+	text-transform:uppercase;
+}
+
+.c-next {
+    width: 16%;
+    padding: 0 3%;
+    text-align: right;
+    cursor: pointer;
+	background:url(../images/calendar_next.png) no-repeat center center #dea93a;
+	height:38px;
+	text-indent:-200000px;
+	font-size:0 !important;
+}
+
+.c-previous {
+    width: 16%;
+    padding: 0 3%;
+    text-align: left;
+    cursor: pointer;
+	background:url(../images/calendar_prev.png) no-repeat center center #dea93a;
+	height:38px;
+	text-indent:-200000px;
+	font-size:0 !important;
+}
+
+.c-month {
+    width: 67.6%;
+    height: 12%;
+    text-align: center;
+	font-weight:400;
+	line-height:38px;
+}
+
+/*.c-nav-btn-over {
+    background-color: rgb(137, 163, 192) !important;
+    font-weight: bold;
+}
+*/
+.c-today {
+    background-color: #62e06c;
+}
+
+.c-event {
+    background-color: #808080;
+    color: white;
+    cursor: pointer;
+}
+
+.c-grid {
+    width: 100%;
+	overflow:hidden;
+	background:url(../images/calender_left_border.png) no-repeat 0 bottom;
+}
+
+.c-event-grid {
+    margin-left: 1px;
+    height: inherit;
+    width: 49%;
+    float: left;
+    box-shadow: 2px 2px 5px #888888;
+	display:none;
+}
+
+.c-grid-title {
+    float: left;
+    background-color: #dea93a;
+    color: white;
+	font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+.c-event-title {
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(135, 155, 188);
+    color: white;
+}
+
+.c-event-body {
+    background-color: #EFF4F9;
+    height: 88.1%;
+}
+
+.c-event-list {
+    padding: 7 0 0 0;
+    overflow: auto;
+    height: 95%;
+}
+
+.c-event-item > .title {
+    font-weight: bold;
+}
+
+.c-event-item > div {
+    text-overflow: ellipsis;
+    width: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.c-event-item {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*.c-event-over {
+    background-color: lightgray;
+    font-weight: bold;
+    color: black;
+}
+*/
+.c-event-over > .description {
+    font-weight: normal;
+}

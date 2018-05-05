@@ -1,0 +1,36 @@
+span.green {
+    color: #92dfa5;
+}
+
+span.pink {
+    color: #feb4ff;
+}
+span.gold {
+    color: #f4b426;
+}
+.banner-list {
+    margin: 18px 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+.banner-list li {
+    background: rgba(0, 0, 0, 0) url("../images/banner_ar.png") no-repeat scroll 0 6px;
+    /*color: #fff;*/
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    padding-left: 26px;
+}
+.pink-heading{
+	font-size:24px;
+	line-height:24px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#f05780;
+	margin-bottom:23px;
+}
+.bold-black-subheading{
+	line-height:33px;
+	font-weight:700;
+}

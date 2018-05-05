@@ -1,0 +1,24 @@
+RewriteEngine On
+#RewriteCond $1 !^(upload|public|ckeditor|ckfinder|blog|robots\.txt)
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^system.*
+
+RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteRule /pages/book-online /book-online [R=301,L]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#RewriteCond %{ENV:HTTPS} !on [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+#php_value upload_max_filesize 30M
+#php_value post_max_size 30M
+#php_value memory_limit 256M
+#php_value max_execution_time 6000
+
+
+
+Options -indexes

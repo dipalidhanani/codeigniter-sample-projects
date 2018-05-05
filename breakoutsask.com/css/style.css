@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url(../images/splash-bkgd.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	text-transform: uppercase;
+}
+.wrapper {
+	max-width: 1120px;
+	margin: 0 auto;
+	width: 80%;
+	padding: 150px 20px;
+}
+.logo {
+	width: 100%;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    display: block;
+    text-align: center;
+}
+img {
+	margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
+.clear {
+	clear: both;
+}
+
+.content-wrap {
+	width: 90%;
+    max-width: 700px;
+    padding: 10px 5%;
+    margin: 0 auto;
+}
+
+.content-wrap.online-form {
+	max-width: 1120px;
+	background-color: #FFF;
+}
+p {
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	font-family: 'Oxygen', sans-serif;
+	line-height: 22px;
+}
+p.small {
+	font-size: 16px;
+	text-transform: none;
+}
+.button {
+	margin: 0 auto;
+	width: 200px;
+	padding: 10px;
+	display:block;
+	background-color: #222;
+	border: 0px;
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	text-align: center;
+}
+
+a, a:active, a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Bookeo*/
+#cb_main {
+	background: #000;
+}
+
+
+@media screen and (max-width: 750px) {
+	.logo {
+		margin-bottom: 20px;
+	}
+}
